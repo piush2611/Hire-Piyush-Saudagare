@@ -8,94 +8,189 @@
     <title>Hire-Piyush-Saudagare</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://use.fontawesome.com/a37f568757.js"></script>
+    <script src="https://kit.fontawesome.com/f90b59850b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
     <!-- license for font awesome icons : https://fontawesome.com/license -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <style>
+        #profile {
+            width: 100%;
+            background: rgb(223, 223, 241);
+            padding-bottom: 100px;
+        }
+
+        .nav-link,
+        .navbar-brand {
+            color: black;
+        }
+
+        #resumeButton,
+        .btn {
+            background: black;
+            color: white;
+        }
+
+        #bg>img {
+            position: absolute;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="landingSection">
-            <div class="" id="profilePicContainer">
-                <img src="./Images/IMG-20190425-WA0019.jpg" alt="" id="profilePic" class="img-fluid ">
+    <div class=" container-fluid" id="profile">
+        <nav class="navbar navbar-expand-lg sticky-top ">
+            <a class="navbar-brand font-weight-bold text-decoration-none h4" href="#profile">{ PIYUSH SAUDAGARE }</a>
+            <button class="navbar-toggler btn-dark" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light bg-dark"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold text-decoration-none h5 " href="#proficiencies">{
+                            PROFICIENCIES }</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none font-weight-bold h5 " href="#projects">{ PROJECTS }</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none h5  font-weight-bold" href="#achievements">{
+                            ACHIEVEMENTS }</a>
+                    </li>
+                </ul>
             </div>
-            <h1 class="text-center pt-2 font-weight-bold">Hello I'm</h1>
-            <h1 class="text-center p-1 font-weight-bold">Piyush Saudagare</h1>
-            <div class="container px-5 text-center font-weight-bold" id="intro">
+        </nav>
+        <div class="container">
+            <div class="text-center">
+                <img src="./Images//professor.png" height="250px" width="250px" class="rounded-circle"
+                    alt="Profile picture">
+            </div>
+            <h1 class="text-center mt-5 font-weight-bold">Piyush Saudagare</h1>
+            <h3 class="text-center my-3 font-weight-bold">Full Stack Developer</h3>
+            <div class="d-flex justify-content-center flex-wrap">
+                <h4 class="mx-2"><img src="https://image.flaticon.com/icons/svg/447/447031.svg" style="width: 20px;"
+                        alt=""> Bangalore</h4>
+                <h4 class="mx-2"> <img src="https://image.flaticon.com/icons/svg/684/684853.svg" style="width: 20px;"
+                        alt=""> 91-9834106451</h4>
+                <h4 class="mx-2"> <img src="https://image.flaticon.com/icons/svg/725/725643.svg" style="width: 20px;"
+                        alt=""> Piyushsaudagare420@gmail.com</h4>
+            </div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="https://github.com/piush2611"><span
+                            class="h1 text-dark"><i class="fab fa-github"></i></span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="https://www.hackerrank.com/piyushsaudagare1"><span
+                            class="h1 text-success"><i class="fab fa-hackerrank"></i></span></a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link active"
+                        href="https://www.linkedin.com/in/piyush-saudagare-2a2ba116a/?originalSubdomain=in"><span
+                            class="h1"><i class="fab fa-linkedin"></i></span></a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="https://twitter.com/PSaudagare?s=03"><span class="h1"><i
+                                class="fab fa-twitter"></i></span></a>
+                </li>
+            </ul>
+            <h3 class=" text-center my-3 mx-auto">
                 An aspiring Full Stack Developer skilled in MERN stack,moulded and
                 shaped by Masai School's military style training. Actively ready to join a great team where I can
                 participate for company's growth as well as personal growth
+            </h3>
+            <div class="text-center">
+                <button class="btn btn-dark" id="resumeButton">Resume</button>
             </div>
-            <div class="text-center  "><button class="btn  btn btn-primary">Resume</button></div>
-            <div class="container">
-                <div class="row justify-content-around mx-auto">
-                    <div class="col-12 col-md-4"><a target="_blank"
-                            href="https://www.linkedin.com/in/piyush-saudagare-2a2ba116a/?originalSubdomain=in"
-                            class="text-dark h5 font-weight-bold"><img src="./Images/linkedin-brands.svg" alt=""
-                                class="mr-2">Piyush Saudagare</a></div>
-                    <div class="col-12 col-md-4"><a target="_blank" href="https://twitter.com/PSaudagare?s=03"
-                            class="text-dark h5 font-weight-bold"><img src="./Images/twitter-brands.svg" alt=""
-                                class="mr-2"> Piyush Saudagare</a></div>
-                    <div class="col-12 col-md-4"><a target="_blank" href="" class="text-dark font-weight-bold"><img
-                                src="./Images/envelope-regular.svg" alt="" class="mr-2">Piyushsaudagare420@gmail.com</a>
-                    </div>
+        </div>
+    </div>
+    <div id="techStack">
+        <div class="container mt-5">
+            <h1 class="text-center font-weight-bold py-3">Tech Stack</h1>
+            <div class="row justify-content-around px-5 pb-5">
+                <div class="col-6 col-md-4 col-lg-3 rounded-circle mb-4">
+                    <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="" class="img-fluid"
+                        style="width: 160px; height: 160px;">
                 </div>
-                <div class="row justify-content-around mx-auto mt-2">
-                    <div class="col-12 col-md-4"><a target="_blank" href="https://github.com/piush2611"
-                            class="text-dark h6 font-weight-bold"><img src="./Images/github-brands.svg" alt=""
-                                class="mr-2">piush2611</a></div>
-                    <div class="col-12 col-md-4"><a target="_blank" href="" class="text-dark h5 font-weight-bold"><img
-                                src="./Images/phone-alt-solid.svg" alt="" class="mr-2"></a>91-9834106451</div>
+                <div class="col-6 col-md-4 col-lg-3 rounded-circle mb-4">
+                    <img src="https://cdn.svgporn.com/logos/css-3.svg" style="width: 160px; height: 160px;" alt=""
+                        class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 rounded-circle mb-4 text-center">
+                    <img src="https://cdn.svgporn.com/logos/bootstrap.svg" style="width: 160px; height: 160px;" alt=""
+                        class="img-fluid">
+                    <div class="h3">Bootstrap</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 rounded-circle mb-4 text-center">
+                    <img src="https://cdn.svgporn.com/logos/javascript.svg" style="width: 160px; height: 160px;" alt=""
+                        class="img-fluid">
+                    <div class="h3">JavaScript</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 rounded-circle mb-4 text-center">
+                    <img src="https://cdn.svgporn.com/logos/react.svg" style="width: 160px; height: 160px;" alt=""
+                        class="img-fluid">
+                    <div class="h3">React</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 rounded-circle mb-4 text-center">
+                    <img src="https://cdn.svgporn.com/logos/redux.svg" style="width: 160px; height: 160px;" alt=""
+                        class="img-fluid">
+                    <div class="h3">Redux</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 rounded-circle mb-4">
+                    <img src="https://cdn.svgporn.com/logos/flask.svg" style="width: 160px; height: 160px;" alt=""
+                        class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 rounded-circle mb-4 text-center">
+                    <img src="https://cdn.svgporn.com/logos/mysql.svg" style="width: 160px; height: 160px;" alt=""
+                        class="img-fluid">
+                    <div class="h3">My SQL</div>
                 </div>
             </div>
         </div>
-        <div class="skills container p-5">
-            <div class="text-center display-4">SKILLS</div>
-            <div class="row p-2 justify-content-around">
-                <div class="col-5 col-lg-3  p-3 mx-auto">
-                    <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="" class=" img-fluid">
+    </div>
+    <div id="proficiencies">
+        <div class="container">
+            <h1 class="text-center font-weight-bold  mb-5">Proficiencies</h1>
+            <div class="row justify-content-around px-5 pb-5">
+                <div class="col-6 col-md-4 col-lg-3 rounded-circle mb-4 text-center">
+                    <img src="https://cdn.svgporn.com/logos/react.svg" alt="" class="img-fluid"
+                        style="width: 160px; height: 160px;">
+                    <h3>React App's</h3>
                 </div>
-                <div class="col-5 col-lg-3  p-3 mx-auto">
-                    <img src="https://cdn.svgporn.com/logos/css-3.svg" alt="" class=" img-fluid ">
+                <div class="col-6 col-md-4 col-lg-3 rounded-circle mb-4 text-center">
+                    <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="" class="img-fluid"
+                        style="width: 160px; height: 160px;">
+                    <h3>Frontend</h3>
                 </div>
-                <div class="col-5 col-lg-3  p-3 mx-auto">
-                    <img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt="" class="ml-4 img-fluid mt-3 ">
-                    <h4 class="text-center my-4 font-weight-bold">BOOTSTRAP</h4>
+                <div class="col-6 col-md-4 col-lg-3 rounded-circle mb-4 text-center">
+                    <img src="https://img.icons8.com/ios-filled/2x/database.png" alt="" class="img-fluid"
+                        style="width: 160px; height: 160px;">
+                    <h3>Backend</h3>
                 </div>
-                <div class="col-5 col-lg-3  p-3 mx-auto">
-                    <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="" class="ml-4 mt-3 img-fluid">
-                    <h4 class="text-center my-4 font-weight-bold">JAVASCRIPT</h4>
+                <div class="col-6 col-md-4 col-lg-3 rounded-circle mb-4 text-center">
+                    <img src="https://hackr.io/tutorials/learn-data-structures-algorithms/logo/logo-data-structures-algorithms?ver=1550834269"
+                        alt="" class="img-fluid" style="width: 160px; height: 160px;">
+                    <h3>Data Structure</h3>
                 </div>
-                <div class="col-5 col-lg-3  p-3 mx-auto">
-                    <img src="https://cdn.svgporn.com/logos/react.svg" alt="" class="ml-4 img-fluid">
-                    <h4 class="text-center my-4 font-weight-bold">REACT</h4>
-                </div>
-                <div class="col-5 col-lg-3  p-3 mx-auto">
-                    <img src="https://cdn.svgporn.com/logos/redux.svg" alt="" class="ml-4 img-fluid">
-                    <h4 class="text-center my-4 font-weight-bold">REDUX</h4>
-                </div>
-                <div class="col-5 col-lg-3  p-3 mx-auto">
-                    <img src="https://cdn.svgporn.com/logos/python.svg" alt="" class="ml-4 img-fluid">
-                    <h4 class="text-center my-4 font-weight-bold">PYTHON</h4>
-                </div>
-                <div class="col-5 col-lg-3  p-3 mx-auto">
-                    <img src="https://cdn.svgporn.com/logos/flask.svg" alt="" class=" img-fluid">
-                </div>
-
             </div>
         </div>
+    </div>
+    <div id="projects" class="container">
+        <h1 class="text-center font-weight-bold  my-4">Projects</h1>
+        <div class="card-deck">
+            <div class="card mb-4">
+                <img class="card-img-top img-fluid" src="./Images//fooddelivery.png" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h2>Food-delivery project</h2>
+                    <h5>A food-delivery website for buying food online </h5>
 
-        <div class="projects p-3 ">
-            <div class="text-center display-4">PROJECTS</div>
-
-            
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 mb-2 ">
-                    <img src="./Images/Screenshot_2020-02-24 React App(1).png" alt="" class="img-fluid">
-                <div class="p-5 text-center">
-                    <h2>Proper project</h2>
-                    <h5>A e-commerce website for buying apple products.</h5>
-                    <h5 class="logo">Technologies used 
+                    <h5 class="logo">Technologies used <br>
                         <img src="https://cdn.svgporn.com/logos/react.svg" alt="">
                         <img src="https://cdn.svgporn.com/logos/redux.svg" alt="">
                         <img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt="">
@@ -103,125 +198,210 @@
                         <img src="https://cdn.svgporn.com/logos/react-router.svg" alt="">
                         <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="">
                     </h5>
-                    <div class="row justify-content-around">
-                        <a href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_020_piyush-dilip/week_9/day_5/session_1" class="col-5 text-decoration-none" target="_blank"><button class="btn rounded-pill btn-block btn-danger">Github
+                </div>
+                <div class="card-footer text-center">
+                    <small class="text-muted">
+                        <a href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_020_piyush-dilip/week_14/day_6/food-delivery-app"
+                            class="col-5 text-decoration-none" target="_blank"><button class="btn">Github
                                 link</button></a>
-                        <a href="https://properproject.netlify.com/" target="_blank" class="col-5 text-decoration-none"><button class="btn btn-block btn-danger rounded-pill">Project demo
-                                </button></a>
-                    </div>
-                    </div>
-
+                        <a href="https://fooddeliveryapp.netlify.com/" class="col-5 text-decoration-none"
+                            target="_blank"><button class="btn ">Project demo
+                            </button></a>
+                    </small>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-2">
-                    <img src="./Images/Screenshot_2020-02-24 React App(2).png" alt="" class="img-fluid">
-                    <div class="p-5 text-center">
-                        <h2>A food-delivery project</h2>
-                        <h5>A food-delivery website for buying food online </h5>
-                        <h5 class="logo">Technologies used 
-                                <img src="https://cdn.svgporn.com/logos/react.svg" alt="">
-                                <img src="https://cdn.svgporn.com/logos/redux.svg" alt="">
-                                <img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt="">
-                                <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="">
-                                <img src="https://cdn.svgporn.com/logos/react-router.svg" alt="">
-                                <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="">
-                            </h5>
-                        <div class="row justify-content-around">
-                            <a href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_020_piyush-dilip/week_14/day_6/food-delivery-app" class="col-5 text-decoration-none" target="_blank"><button class="btn rounded-pill  btn-block btn-danger">Github
-                                    link</button></a>
-                            <a href="https://fooddeliveryapp.netlify.com/" class="col-5 text-decoration-none" target="_blank"><button class="btn btn-block btn-danger rounded-pill ">Project demo
-                                    </button></a>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="col-12 col-md-6 col-lg-4 mb-2">
-                    <img src="./Images//Screenshot_2020-02-24 React App(3).png" alt="" class="img-fluid">
-                    <div class="p-5 text-center">
-                            <h2>A e-commerce project</h2>
-                            <h5>A e-commerce website for buying mobiles and watches online </h5>
-                            <h5 class="logo">Technologies used 
-                                    <img src="https://cdn.svgporn.com/logos/react.svg" alt="">
-                                    <img src="https://cdn.svgporn.com/logos/redux.svg" alt="">
-                                    <img src="https://cdn.svgporn.com/logos/react-router.svg" alt="">
-                                    <img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt="">
-                                    <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="">
-                                    <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="">
-                                </h5>
-                            <div class="row justify-content-around">
-                                <a href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_020_piyush-dilip/week_10/day_2/session_2/e-commerce-app" class="col-5 text-decoration-none" target="_blank"><button class="rounded-pill btn btn-block btn-danger">Github
-                                        link</button></a>
-                                <a href="https://project-e-commerce.netlify.com/" class="col-5 text-decoration-none" target="_blank"><button class="btn btn-block btn-danger rounded-pill">Project demo
-                                        </button></a>
-                            </div>
-                        </div>
-                </div>
-                
-                <div class="col-12 col-md-6 col-lg-4 mb-2">
-                    <img src="./Images/Screenshot_2020-02-24 W9 D2 S2(1).png" alt="" class="img-fluid">
-                    <div class="p-5 text-center">
-                            <h2>Zerodha project</h2>
-                            <h5>A clone of zerodha website </h5>
-                            <h5 class="logo">Technologies used 
-                                    <img src="https://cdn.svgporn.com/logos/react.svg" alt="">
-                                    <img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt="">
-                                    <img src="https://cdn.svgporn.com/logos/react-router.svg" alt="">
-                                    <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="">
-                                    <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="">
-                                </h5>
-                            <div class="row justify-content-around">
-                                <a href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_020_piyush-dilip/week_9/day_2/session_2" class="col-5 text-decoration-none" target="_blank"><button class="btn rounded-pill btn-block btn-danger">Github
-                                        link</button></a>
-                                <a href="" class="col-5 text-decoration-none" target="_blank"><button class="btn btn-block btn-danger rounded-pill ">Project demo
-                                        </button></a>
-                            </div>
-                        </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-2">
-                    <img src="./Images/Screenshot_2020-02-24 E-bikes.png" alt="" class="  img-fluid">
-                    <div class="p-5 text-center">
-                            <h2>A e-bikes project</h2>
-                            <h5>An online platform to buy e-bikes </h5>
-                            <h5 class="logo">Technologies used 
-                                    <img src="https://cdn.svgporn.com/logos/css-3.svg" alt="">
-                                    <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="">
-                                </h5>
-                            <div class="row justify-content-around">
-                                <a href="https://github.com/piush2611/e-bikes" class="col-5 text-decoration-none" target="_blank"><button class="btn rounded-pill btn-block btn-danger">Github
-                                        link</button></a>
-                                <a href="https://piush2611.github.io/e-bikes/index.html" class="col-5 text-decoration-none" target="_blank"><button class="btn rounded-pill btn-block btn-danger">Project demo
-                                        </button></a>
-                            </div>
-                        </div>
-
-                        
             </div>
-
-        </div>
-
-
-
-        <div class="github container my-5">
-                <div class="text-center display-4 my-3"> WHAT I HAVE DONE IN LAST 6 MONTHS</div>
-                <div class="row justify-content-around">
-                    <div class="col-5 rounded-pill p-2  border border-info mb-3">
-                        <div class=" p-3 text-center font-weight-bold ">1200+ Hours of coding</div>
-                    </div>
-                    <div class="col-5  border border-info rounded-pill p-2 mb-3">
-                            <div class=" p-3 text-center font-weight-bold ">200+ DS & ALGO problems</div>
-                    </div>
-                    <div class="col-5  border border-info rounded-pill p-2">
-                            <div class=" p-3 text-center font-weight-bold ">286+ github contributions</div>
-                    </div>
-                    <div class="col-5  border border-info rounded-pill p-2 ">
-                            <div class=" p-3 text-center font-weight-bold ">100 Hours of soft skills</div>
-                    </div>
+            <div class="card mb-4">
+                <img class="card-img-top" src="./Images//ecommerce.png" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h2>E-commerce project</h2>
+                    <h5>A e-commerce website for buying mobiles and watches online </h5>
+                    <h5 class="logo">Technologies used <br>
+                        <img src="https://cdn.svgporn.com/logos/react.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/redux.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/react-router.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="">
+                    </h5>
                 </div>
+                <div class="card-footer text-center">
+                    <small class="text-muted">
+                        <a href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_020_piyush-dilip/week_10/day_2/session_2/e-commerce-app"
+                            class="col-5 text-decoration-none" target="_blank"><button class=" btn ">Github
+                                link</button></a>
+                        <a href="https://project-e-commerce.netlify.com/" class="col-5 text-decoration-none"
+                            target="_blank"><button class="btn ">Project demo
+                            </button></a>
+                    </small>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <img class="card-img-top" src="./Images//properproject.png" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h2 class="">Proper project</h2>
+                    <h5>A e-commerce website for buying apple products.</h5>
+                    <h5 class="logo">Technologies used <br>
+                        <img src="https://cdn.svgporn.com/logos/react.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/redux.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/react-router.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="">
+                    </h5>
+                </div>
+                <div class="card-footer text-center">
+                    <small class="text-muted">
+                        <a href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_020_piyush-dilip/week_9/day_5/session_1"
+                            class="col-5 text-decoration-none" target="_blank"><button class="btn ">Github
+                                link</button></a>
+                        <a href="https://properproject.netlify.com/" target="_blank"
+                            class="col-5 text-decoration-none"><button class="btn ">Project demo
+                            </button></a>
+                    </small>
+                </div>
+            </div>
         </div>
-        <div class="githubStatics container my-2">
-                <div class="text-center display-4"> GITHUB COMMITS</div>           
-                 <img src="./Images//githubcommits.png" alt="" class="img-fluid p-3">
+        <div class="card-deck mt-4">
+            <div class="card">
+                <img class="card-img-top" src="./Images//meetingRoom.png" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h2>Meeting room project</h2>
+                    <h5>A website to book meeting rooms </h5>
+                    <h5 class="logo">Technologies used <br>
+                        <img src="https://cdn.svgporn.com/logos/react.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/redux.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/react-router.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="">
+                    </h5>
+                </div>
+                <div class="card-footer text-center">
+                    <small class="text-muted">
+                        <a href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_020_piyush-dilip/week_17/day_1/meetingroombooking"
+                            class="col-5 text-decoration-none" target="_blank"><button class="btn ">Github
+                                link</button></a>
+                        <a href="https://meeting-room-booking.netlify.com" target="_blank"
+                            class="col-5 text-decoration-none"><button class="btn ">Project demo
+                            </button></a>
+                    </small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./Images/Screenshot_2020-02-24 W9 D2 S2(1).png" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h2>Zerodha project</h2>
+                    <h5>A clone of zerodha website </h5>
+                    <h5 class="logo">Technologies used <br>
+                        <img src="https://cdn.svgporn.com/logos/react.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/react-router.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/javascript.svg" alt="">
+                    </h5>
+                </div>
+                <div class="card-footer text-center">
+                    <small class="text-muted">
+                        <a href="https://github.com/masai-school/cohort_3/tree/master/submissions/sm_020_piyush-dilip/week_9/day_2/session_2"
+                            class="col-5 text-decoration-none" target="_blank"><button class="btn ">Github
+                                link</button></a>
+                        <a href="https://zerodha-clone.netlify.com/" class="col-5 text-decoration-none"
+                            target="_blank"><button class="btn  ">Project demo
+                            </button></a>
+                    </small>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="./Images/Screenshot_2020-02-24 E-bikes.png" alt="Card image cap">
+                <div class="card-body text-center">
+                    <h2>E-bikes project</h2>
+                    <h5>An online platform to buy e-bikes </h5>
+                    <h5 class="logo">Technologies used <br>
+                        <img src="https://cdn.svgporn.com/logos/css-3.svg" alt="">
+                        <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="">
+                    </h5>
+                </div>
+                <div class="card-footer text-center">
+                    <small class="text-muted">
+                        <a href="https://github.com/piush2611/e-bikes" class="col-5 text-decoration-none"
+                            target="_blank"><button class="btn ">Github
+                                link</button></a>
+                        <a href="https://piush2611.github.io/e-bikes/index.html" class="col-5 text-decoration-none"
+                            target="_blank"><button class="btn ">Project demo
+                            </button></a>
+                    </small>
+                </div>
+            </div>
         </div>
     </div>
+    <div id="achievements" class="container p-5">
+        <h1 class="text-center font-weight-bold text-dark py-3">Achievements</h1>
+        <div class="row justify-content-around">
+            <div class="col-12 col-md-5">
+                <div class="text-center">
+                    <img src="https://nvchaitanya.github.io/Images/masaihack.png" alt="" style="height: 250px;"
+                        class="img-thumbnail">
+                    <h1 class="font-weight-bold">Winner</h1>
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <img src="./Images//finance.png" alt="" class="p-2 img-thumbnail">
+                <h5 class="text-center my-2 font-weight-bold">Hackathon project - FINANCE INSPIRED </h5>
+                <div class="text-center">
+                    <a href="https://finance-inspired.netlify.com/" target="_blank"> <button
+                            class="btn  btn-primary">Demo</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <hr class="text-dark">
+    </div>
+    <div id="stats">
+        <div class="container text-center my-5">
+            <div class="row">
+                <div class="col-10 offset-2 offset-md-1 col-md-5 offset-lg-0 col-lg-3 mb-2 text-center">
+                    <div style="height:220px;width:220px;border:15px solid rgb(1, 10, 15);"
+                        class="text-center rounded-circle">
+                        <p class="font-weight-bold pt-5 h1 text-center">1200+</p>
+                        <span class="h4">Hours Of<br> Coding</span>
+                    </div>
+                </div>
+                <div class="col-10 offset-2 offset-md-1 col-md-5 offset-lg-0 col-lg-3 mb-2 text-center">
+                    <div style="height:220px;width:220px;border:15px solid rgb(1, 10, 15);"
+                        class="text-center rounded-circle">
+                        <p class="font-weight-bold pt-5 h1">150+</p>
+                        <span class="h4">Hackerrank <br>Problems</span>
+                    </div>
+                </div>
+                <div class="col-10 offset-2 offset-md-1 col-md-5 offset-lg-0 col-lg-3 mb-2 text-center">
+                    <div style="height:220px;width:220px;border:15px solid rgb(1, 10, 15);"
+                        class="text-center rounded-circle">
+                        <p class="font-weight-bold pt-5 h1">319+</p>
+                        <span class="h4">GitHub Contributions</span>
+                    </div>
+                </div>
+                <div class="col-10 offset-2 offset-md-1 col-md-5 offset-lg-0 col-lg-3 mb-2 text-center">
+                    <div style="height:220px;width:220px;border:15px solid rgb(1, 10, 15);"
+                        class="text-center rounded-circle">
+                        <p class="font-weight-bold h1 mt-5">100</p>
+                        <span class="h4">Hours of <br>Soft Skills</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="githubCalender" class="p-5">
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+
+        <script>
+            GitHubCalendar(".calendar", "piush2611", { responsive: true });
+        </script>
+    </div>
+
 </body>
 
 </html>
